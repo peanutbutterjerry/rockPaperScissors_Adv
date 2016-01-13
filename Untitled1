@@ -1,0 +1,47 @@
+var userPoint = 0;
+var aiPoint = 0;
+
+function getAISelection() {
+  var number = Math.floor((Math.random() * (3)));
+  var array = ["rock","paper","scissors"];
+   return array[number];
+}
+
+var userValue = prompt("what is your choice?");
+var aiValue = getAISelection();
+function pickWinner(){
+   if (userValue === aiValue){
+      console.log("draw");
+    } else if (userValue =="rock" && aiValue =="paper"){
+      console.log("ai won");
+      aiPoint ++;
+    }else if (userValue =="rock" && aiValue =="scissors"){
+      console.log("user won"); 
+      userPoint ++;
+    }else if (userValue =="scissors" && aiValue =="paper"){
+      console.log("user won"); 
+      userPoint ++;
+    }else if (userValue =="scissors" && aiValue =="rock"){
+      console.log("ai won");
+      aiPoint ++;
+    }else if (userValue =="paper" && aiValue =="rock"){
+      console.log("user won"); 
+      userPoint  ++;
+    }else if (userValue =="paper" && aiValue =="scissors"){
+      console.log("ai won");
+      aiPoint ++;
+    }
+}
+
+// This function sets the scoreboard with the correct points
+function setScore() {
+    $('#userPoint').html(userPoint);
+    $('#aiPoint').html(aiPoint);
+    
+}
+
+getAISelection();
+pickWinner();
+setScore();
+
+$('#message').html("AI Selected "+ aiValue+".  And you selected " + userValue + ".");

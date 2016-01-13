@@ -1,20 +1,72 @@
+#title{
+    text-align:center;
+    font-size:40px;
+    height:60px;
+    box-shadow:5px 5px 5px;
+    background-color:#b3b3b3;
+}
 .container { 
-    width: 800px;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    width: 600px;
+    width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:40px;
     margin-bottom: 0;
+    
 }
 .token { 
     width: 32%; 
-    border: 1px solid blue; 
-    margin-left: 1px;
+    border: 1px solid grey; 
+    margin-left: 10px;
     float:left;
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 40px 0px 40px 0px;
     font-size: x-large;
+    border-radius:20px;
+}
+#paper{
+    background-position: center; 
+    background-size: 170px 170px;
+    background-repeat: no-repeat;
+    background-image: url("http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b2/Paper.png?version=8530c42d16bad38050611a74ad34cabd");
+}
+#rock{
+    color:white;
+    background-position: center; 
+    background-size: 170px 170px;
+    background-repeat: no-repeat;
+    background-image: url("http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/67/Cobblestone.png?version=8bb693b335831156fe740007a654fb53");
+}
+#scissors{
+    color:steelblue;
+    background-position: center; 
+    background-size: 170px 170px;
+    background-repeat: no-repeat;
+    background-image: url("http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d1/Shears.png?version=c2e4e810f9dadc8c49cdd979f854ff25");
 }
 #message {
     text-align: center;
+    font-size:35px;
+    line-height:60px;
+    color:steelblue;
+    margin-top:20px;
+}
+#scoreboard{
+    text-align:center;
+    line-height:250px;
+    height:190px;
+    font-size:35px;
+    background-position: 50% 0%; 
+    background-size: 990px 200px;
+    background-repeat: no-repeat;
+    background-image:url(http://www.cliparthut.com/clip-arts/707/wooden-boards-collection-hanging-on-a-cord-with-nail-from-the-getty--707819.png);
+}
+#background{
+    text-align:center;
+    height:200px;
+    
+}
+#rock:hover,#paper:hover,#scissors:hover{
+    cursor:pointer;
+    
 }
